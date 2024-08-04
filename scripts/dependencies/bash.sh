@@ -90,7 +90,7 @@ function bash_build()
           echo
           echo "Running bash configure..."
 
-          if is_develop
+          if is_development
           then
             run_verbose bash "${XBB_SOURCES_FOLDER_PATH}/${bash_src_folder_name}/configure" --help
           fi
