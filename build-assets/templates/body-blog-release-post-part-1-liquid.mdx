@@ -1,32 +1,36 @@
 ---
 title:  xPack GNU Bash v{{releaseVersion}} released
 
-Version **{{releaseVersion}}** is a new release; it follows the upstream release."
+date: {{releaseDate}}
 
-upstream_version: "3.27.9"
-upstream_release_date: "21 Mar 2024"
+authors: ilg-ul
+
+# To be listed in the Releases page.
+tags:
+  - releases
+
+# ----- Custom properties -----------------------------------------------------
+
+bash_version: "{{upstreamVersion}}"
+bash_release_date: "{{customFields.bashReleaseDate}}"
 
 version: "{{releaseVersion}}"
 npm_subversion: "1"
 
 download_url: https://github.com/xpack-dev-tools/bash-xpack/releases/tag/v{{releaseVersion}}/
 
-comments: true
-
-date: {{releaseDate}}
-
-# For Jekyll releases selection.
-categories:
-  - releases
-  - bash
-
-# For navigation; use scripts/createtag.sh in Jekyll.
-tags:
-  - releases
-  - bash
-  - build
-
 ---
+
+Version **{{releaseVersion}}** is a new release; it follows the upstream release."
+
+<!-- truncate -->
+
+import Image from '@theme/IdealImage';
+import CodeBlock from '@theme/CodeBlock';
+
+import Prerequisites from './_common/_prerequisites-glib-2.27.mdx'
+import DeprecationNotices from './_common/_deprecation-notices-glib-2.27.mdx'
+import DownloadAnalytics from './_common/_download-analytics.mdx'
 
 The [xPack GNU Bash](https://xpack-dev-tools.github.io/bash-xpack/)
 is a standalone cross-platform binary distribution of
@@ -48,75 +52,12 @@ armv6 is not supported).
 
 The binary files are available from <a href={frontMatter.download_url}>GitHub Releases</a>.
 
-## Prerequisites
-
-- GNU/Linux Intel 64-bit: any system with **GLIBC 2.27** or higher
-  (like Ubuntu 18 or later, Debian 10 or later, RedHat 8 or later,
-  Fedora 29 or later, etc)
-- GNU/Linux Arm 32/64-bit: any system with **GLIBC 2.27** or higher
-  (like Raspberry Pi OS, Ubuntu 18 or later, Debian 10 or later, RedHat 8 or later,
-  Fedora 29 or later, etc)
-- Intel Windows 64-bit: Windows 7 with the Universal C Runtime
-  ([UCRT](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)),
-  Windows 8, Windows 10
-- Intel macOS 64-bit: 10.13 or later
-- Apple Silicon macOS 64-bit: 11.6 or later
+<Prerequisites/>
 
 ## Install
 
 The full details of installing the **xPack GNU Bash**
 on various platforms are presented in the [Install Guide](/docs/install/).
-
-### Easy install
-
-The easiest way to install GNU Bash is with
-[`xpm`]({% raw %}{{site.baseurl}/xpm/)
-by using the **binary xPack**, available as
-[`@xpack-dev-tools/bash`](https://www.npmjs.com/package/@xpack-dev-tools/bash)
-from the [`npmjs.com`](https://www.npmjs.com) registry.
-
-With the `xpm` tool available, installing
-the latest version of the package and adding it as
-a development dependency for a project is quite easy:
-
-```sh
-cd my-project
-xpm init # Add a package.json if not already present
-
-xpm install @xpack-dev-tools/bash@latest --verbose
-
-ls -l xpacks/.bin
-```
-
-To install this specific version, use:
-
-```sh
-xpm install @xpack-dev-tools/bash@{frontMatter.version}}.{{page.npm_subversion} --verbose
-```
-
-It is also possible to install Meson Build globally, in the user home folder,
-but this requires xPack aware tools to automatically identify them and
-manage paths.
-
-```sh
-xpm install --global @xpack-dev-tools/bash@latest --verbose
-```
-
-### Uninstall
-
-To remove the links created by xpm in the current project:
-
-```sh
-cd my-project
-
-xpm uninstall @xpack-dev-tools/bash
-```
-
-To completely remove the package from the central xPack store:
-
-```sh
-xpm uninstall --global @xpack-dev-tools/bash
-```
 
 ## Compliance
 
@@ -126,8 +67,8 @@ The **xPack GNU Bash** is based on the official
 The current version is based on:
 
 - GNU Bash release
-[{frontMatter.upstream_version}](https://github.com/Kitware/GNU Bash/releases/tag/v{frontMatter.upstream_version}/)
-from {frontMatter.upstream_release_date}.
+{frontMatter.bash_version}
+from {frontMatter.bash_release_date}.
 
 ## Changes
 
@@ -151,7 +92,7 @@ to redirect invocations to the central packages repository.
 
 The current GNU Bash documentation is available online from:
 
-- [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
+- https://www.gnu.org/software/bash/manual/
 
 ## Build
 
