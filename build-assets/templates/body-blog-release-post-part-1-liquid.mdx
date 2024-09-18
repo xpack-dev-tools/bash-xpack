@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU Bash v{{releaseVersion}} released
 
-summary: "Version **{{releaseVersion}}** is a new release; it follows the upstream release."
+Version **{{releaseVersion}}** is a new release; it follows the upstream release."
 
 upstream_version: "3.27.9"
 upstream_release_date: "21 Mar 2024"
@@ -36,13 +36,17 @@ There are separate binaries for **Windows** (x64),
 **macOS** (x64 and arm64)
 and **GNU/Linux** (x64, arm64 and arm).
 
-{% raw %}{% include note.html content="The main targets for the Arm binaries
-are the **Raspberry Pi** class devices (armv7l and aarch64;
-armv6 is not supported)." %}{% endraw %}
+:::note Raspberry Pi
+
+The main targets for the GNU/Linux Arm
+binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
+armv6 is not supported).
+
+:::
 
 ## Download
 
-The binary files are available from GitHub [Releases]({% raw %}{{page.download_url}}{% endraw %}).
+The binary files are available from <a href={frontMatter.download_url}>GitHub Releases</a>.
 
 ## Prerequisites
 
@@ -60,14 +64,13 @@ The binary files are available from GitHub [Releases]({% raw %}{{page.download_u
 
 ## Install
 
-The full details of installing the **xPack GNU Bash** on various platforms
-are presented in the separate
-[Install]({% raw %}{{site.baseurl}}{% endraw %}/dev-tools/bash/install/) page.
+The full details of installing the **xPack GNU Bash**
+on various platforms are presented in the [Install Guide](/docs/install/).
 
 ### Easy install
 
 The easiest way to install GNU Bash is with
-[`xpm`]({% raw %}{{site.baseurl}}{% endraw %}/xpm/)
+[`xpm`]({% raw %}{{site.baseurl}/xpm/)
 by using the **binary xPack**, available as
 [`@xpack-dev-tools/bash`](https://www.npmjs.com/package/@xpack-dev-tools/bash)
 from the [`npmjs.com`](https://www.npmjs.com) registry.
@@ -88,7 +91,7 @@ ls -l xpacks/.bin
 To install this specific version, use:
 
 ```sh
-xpm install @xpack-dev-tools/bash@{% raw %}{{page.version}}.{{page.npm_subversion}}{% endraw %} --verbose
+xpm install @xpack-dev-tools/bash@{frontMatter.version}}.{{page.npm_subversion} --verbose
 ```
 
 It is also possible to install Meson Build globally, in the user home folder,
@@ -123,8 +126,8 @@ The **xPack GNU Bash** is based on the official
 The current version is based on:
 
 - GNU Bash release
-[{% raw %}{{page.upstream_version}}{% endraw %}](https://github.com/Kitware/GNU Bash/releases/tag/v{% raw %}{{page.upstream_version}}{% endraw %}/)
-from {% raw %}{{page.upstream_release_date}}{% endraw %}.
+[{frontMatter.upstream_version}](https://github.com/Kitware/GNU Bash/releases/tag/v{frontMatter.upstream_version}/)
+from {frontMatter.upstream_release_date}.
 
 ## Changes
 
@@ -144,36 +147,6 @@ to redirect invocations to the central packages repository.
 
 - none
 
-## Shared libraries
-
-On all platforms the packages are standalone, and expect only the standard
-runtime to be present on the host.
-
-All dependencies that are build as shared libraries are copied locally
-in the `libexec` folder (or in the same folder as the executable for Windows).
-
-### `DT_RPATH` and `LD_LIBRARY_PATH`
-
-On GNU/Linux the binaries are adjusted to use a relative path:
-
-```console
-$ readelf -d library.so | grep runpath
- 0x000000000000001d (RPATH)            Library rpath: [$ORIGIN]
-```
-
-In the GNU ld.so search strategy, the `DT_RPATH` has
-the highest priority, higher than `LD_LIBRARY_PATH`, so if this later one
-is set in the environment, it should not interfere with the xPack binaries.
-
-Please note that previous versions, up to mid-2020, used `DT_RUNPATH`, which
-has a priority lower than `LD_LIBRARY_PATH`, and does not tolerate setting
-it in the environment.
-
-### `@rpath` and `@loader_path`
-
-Similarly, on macOS, the binaries are adjusted with `install_name_tool` to use a
-relative path.
-
 ## Documentation
 
 The current GNU Bash documentation is available online from:
@@ -189,7 +162,7 @@ of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
 
 For the prerequisites and more details on the build procedure, please see the
-[How to build](https://github.com/xpack-dev-tools/bash-xpack/blob/xpack/README-BUILD.md) page.
+[Maintainer Info](/docs/maintainer/) page.
 
 ## CI tests
 
