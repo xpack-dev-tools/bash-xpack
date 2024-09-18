@@ -16,8 +16,8 @@
       "customFields": {
         "programName": "bash",
         "branding": "GNU bash, version ",
-        "$link": "",
-        "bashReleaseDate": ""
+        "$link": "https://ftp.gnu.org/gnu/bash/",
+        "bashReleaseDate": "21 Mar 2024"
       },
       "buildFolderRelativePath": "{{ 'build' | path_join: configuration.name | to_filename | downcase }}",
       "buildFolderRelativePathPosix": "{{ 'build' | path_posix_join: configuration.name | downcase }}",
