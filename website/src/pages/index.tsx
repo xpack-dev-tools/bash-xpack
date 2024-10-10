@@ -41,9 +41,9 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from xPack Binary Development Tools`}
-      description="A binary package with the GNU Bash executables">
+    <Layout 
+      title={`Hello from bash`}
+      description="A binary package with the bash executables">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
