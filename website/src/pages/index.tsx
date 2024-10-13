@@ -42,7 +42,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout 
-      title={`Hello from bash`}
+      title={`Welcome to bash`}
       description="A binary package with the bash executables">
       <HomepageHeader />
       <main>
