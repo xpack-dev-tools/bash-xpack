@@ -1,0 +1,7 @@
+Sitemap: https://xpack-dev-tools.github.io/bash-xpack/sitemap.xml
+
+User-agent: *
+Disallow: /bash-xpack/blog/archive/
+Disallow: /bash-xpack/blog/authors/
+Disallow: /bash-xpack/blog/page/
+Disallow: /bash-xpack/blog/tags/
