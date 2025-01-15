@@ -5,8 +5,7 @@
 
 # The xPack GNU Bash
 
-A standalone cross-platform (Windows, macOS, GNU/Linux)
-binary distribution of GNU Bash,
+A standalone, cross-platform (Windows, macOS, GNU/Linux) binary distribution of GNU Bash,
 intended for reproducible builds.
 
 ## Project documentation
