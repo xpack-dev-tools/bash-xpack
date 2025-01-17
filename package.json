@@ -76,7 +76,8 @@
     "liquidjs": "^10.19.1"
   },
   "topConfig": {
-    "longName": "GNU Bash"
+    "longName": "GNU Bash",
+    "shortName": "bash"
   },
   "engines": {
     "node": " >=18.0.0"
