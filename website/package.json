@@ -56,7 +56,14 @@
       "last 5 safari version"
     ]
   },
-  "websiteConfig": {},
+  "websiteConfig": {
+    "customFields": {
+      "programName": "bash",
+      "branding": "GNU bash, version ",
+      "$link": "https://ftp.gnu.org/gnu/bash/",
+      "bashReleaseDate": "21 Mar 2024"
+    }
+  },
   "engines": {
     "node": ">=18.0"
   }
