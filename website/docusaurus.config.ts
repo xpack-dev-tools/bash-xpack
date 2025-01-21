@@ -275,7 +275,7 @@ const config: Config = {
           label: 'GitHub',
           items: [
             {
-              label: `bash-xpack`,
+              label: `bash-xpack project`,
               href: `https://github.com/xpack-dev-tools/bash-xpack/`,
             },
             {
@@ -348,7 +348,7 @@ const config: Config = {
               href: 'https://www.paypal.com/donate/?hosted_button_id=5MFRG9ZRBETQ8',
             },
             {
-              label: 'GitHub bash-xpack',
+              label: 'GitHub bash-xpack project',
               href: 'https://github.com/xpack-dev-tools/bash-xpack/',
             },
             {
