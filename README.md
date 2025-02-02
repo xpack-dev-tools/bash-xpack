@@ -1,6 +1,6 @@
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/xpack-dev-tools/bash-xpack)](https://github.com/xpack-dev-tools/bash-xpack/blob/xpack/package.json)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/xpack-dev-tools/bash-xpack)](https://github.com/xpack-dev-tools/bash-xpack/releases)
-[![npm (scoped)](https://img.shields.io/npm/v/@xpack-dev-tools/bash?color=blue)](https://www.npmjs.com/package/@xpack-dev-tools/bash/)
+[![NPM Version](https://img.shields.io/npm/v/@xpack-dev-tools/bash?color=green)](https://www.npmjs.com/package/@xpack-dev-tools/bash/)
 [![license](https://img.shields.io/github/license/xpack-dev-tools/bash-xpack)](https://github.com/xpack-dev-tools/bash-xpack/blob/xpack/LICENSE)
 
 # The xPack GNU Bash
