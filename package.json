@@ -47,10 +47,6 @@
           "fileName": "xpack-bash-3.27.9-1-darwin-x64.tar.gz",
           "sha256": "1303e71321b439112ddd8bc78d6d9b21eea519a856f0542ee67d3d13bc008df8"
         },
-        "linux-arm": {
-          "fileName": "xpack-bash-3.27.9-1-linux-arm.tar.gz",
-          "sha256": "b27b98533d150922f9e891ea8c764b9da111c5092b30020ce6a216469b6a91cb"
-        },
         "linux-arm64": {
           "fileName": "xpack-bash-3.27.9-1-linux-arm64.tar.gz",
           "sha256": "f05347ca20c7544a1d0bdead8713f68c2cdac20556f77b7f7f3787ed4612556f"
