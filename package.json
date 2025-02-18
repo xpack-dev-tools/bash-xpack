@@ -33,7 +33,7 @@
   },
   "license": "MIT",
   "xpack": {
-    "minimumXpmRequired": "0.16.3",
+    "minimumXpmRequired": "0.20.5",
     "binaries": {
       "destination": "./.content",
       "baseUrl": "https://github.com/xpack-dev-tools/bash-xpack/releases/download/v3.27.9-1",
@@ -61,7 +61,7 @@
         }
       }
     },
-    "bin": {
+    "executables": {
       "bash": "./.content/bin/bash",
       "bashbug": "./.content/bin/bashbug"
     }
