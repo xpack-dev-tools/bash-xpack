@@ -72,8 +72,9 @@
     "liquidjs": "^10.19.1"
   },
   "topConfig": {
-    "longName": "GNU Bash",
-    "shortName": "bash"
+    "descriptiveName": "GNU Bash",
+    "permalinkName": "bash",
+    "useSelfHostedRunners": "true"
   },
   "engines": {
     "node": " >=18.0.0"
