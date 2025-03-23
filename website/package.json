@@ -75,7 +75,8 @@
     "programName": "bash",
     "branding": "GNU bash, version ",
     "$link": "https://ftp.gnu.org/gnu/bash/",
-    "bashReleaseDate": "21 Mar 2024"
+    "bashReleaseDate": "21 Mar 2024",
+    "shareOnTwitter": "true"
   },
   "engines": {
     "node": ">=18.0"
