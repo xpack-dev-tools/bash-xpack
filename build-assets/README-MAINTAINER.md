@@ -69,7 +69,7 @@ xpm link -C ~/Work/xpack-dev-tools/xbb-helper-xpack.git
 ## Release schedule
 
 The xPack GNU Bash release schedule generally follows the original GNU
-[releases](https://ftp.gnu.org/gnu/bash/).
+[releases](https://ftpmirror.gnu.org/gnu/bash/).
 
 ## How to make new releases
 
@@ -101,7 +101,7 @@ update the dependencies in `package.json`.
 
 ### Check the latest upstream release
 
-Check the GNU Bash [Releases](https://ftp.gnu.org/gnu/bash/)
+Check the GNU Bash [Releases](https://ftpmirror.gnu.org/gnu/bash/)
 and compare the the xPack [Releases](https://github.com/xpack-dev-tools/bash-xpack/releases/).
 
 ### Increase the version

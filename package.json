@@ -72,12 +72,13 @@
     "liquidjs": "^10.19.1"
   },
   "topConfig": {
-    "descriptiveName": "GNU Bash",
+    "descriptiveName": "xPack GNU Bash",
+    "upstreamDescriptiveName": "GNU Bash",
     "permalinkName": "bash",
     "skipCiTests": "true",
     "useSelfHostedRunners": "true"
   },
   "engines": {
-    "node": " >=18.0.0"
+    "node": " >=20.0"
   }
 }

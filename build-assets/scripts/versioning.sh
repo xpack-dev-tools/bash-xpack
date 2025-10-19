@@ -32,10 +32,10 @@ function application_build_versioned_components()
     # https://ftp.gnu.org/pub/gnu/libiconv/
     libiconv_build "1.17"
 
-    # https://ftp.gnu.org/gnu/ncurses/
+    # https://ftpmirror.gnu.org/gnu/ncurses/
     ncurses_build "6.5"
 
-    # https://ftp.gnu.org/gnu/readline/
+    # https://ftpmirror.gnu.org/gnu/readline/
     readline_build "8.2" # requires ncurses
 
     if false
@@ -50,7 +50,7 @@ function application_build_versioned_components()
       # ld: symbol(s) not found for architecture x86_64
       # clang-16: error: linker command failed with exit code 1 (use -v to see invocation)
 
-      # https://ftp.gnu.org/gnu/libunistring/
+      # https://ftpmirror.gnu.org/gnu/libunistring/
       libunistring_build "1.2"
 
       # https://ftp.gnu.org/pub/gnu/gettext/

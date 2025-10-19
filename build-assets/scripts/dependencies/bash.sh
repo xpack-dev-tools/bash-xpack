@@ -13,7 +13,7 @@
 
 # -----------------------------------------------------------------------------
 
-# https://ftp.gnu.org/gnu/bash/
+# https://ftpmirror.gnu.org/gnu/bash/
 # https://gitlab.archlinux.org/archlinux/packaging/packages/bash/-/blob/main/PKGBUILD
 # https://github.com/Homebrew/homebrew-core/blob/master/Formula/b/bash.rb
 
@@ -32,9 +32,9 @@ function bash_build()
   # The folder name as resulted after being extracted from the archive.
   local bash_src_folder_name="bash-${bash_version}"
 
-  # https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz
+  # https://ftpmirror.gnu.org/gnu/bash/bash-5.2.21.tar.gz
   local bash_archive="${bash_src_folder_name}.tar.gz"
-  local bash_url="https://ftp.gnu.org/gnu/bash//${bash_archive}"
+  local bash_url="https://ftpmirror.gnu.org/gnu/bash//${bash_archive}"
 
   # The folder name  for build, licenses, etc.
   local bash_folder_name="${bash_src_folder_name}"
