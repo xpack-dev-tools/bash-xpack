@@ -1,0 +1,8 @@
+{
+  "descriptiveName": "xPack GNU Bash",
+  "permalinkName": "bash",
+  "preferredName": "xPack GNU Bash",
+  "upstreamDescriptiveName": "GNU Bash",
+  "skipCiTests": true,
+  "useSelfHostedRunners": true
+}
