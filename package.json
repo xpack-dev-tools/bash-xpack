@@ -75,13 +75,6 @@
     "deep-clean": "del-cli node_modules package-lock.json *.tgz",
     "postversion": "git push origin --all && git push origin --tags"
   },
-  "_topConfig": {
-    "descriptiveName": "xPack GNU Bash",
-    "upstreamDescriptiveName": "GNU Bash",
-    "permalinkName": "bash",
-    "skipCiTests": "true",
-    "useSelfHostedRunners": "true"
-  },
   "engines": {
     "node": ">=20.0"
   }
